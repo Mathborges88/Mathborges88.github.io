@@ -7,15 +7,9 @@ baseurl: ""  # Geralmente vazio para repositórios GitHub Pages, caso contrário
 url: "https://mathborges88.github.io"  # URL do seu site
 
 # Tema
-theme: jekyll-theme-merlot # Tema oficial do GitHub Pages
-
-# Exemplo de personalização do tema, se necessário
-# logo: "/assets/images/logo.png"  # Caminho para uma imagem de logo, se houver
-# favicon: "/assets/images/favicon.ico"  # Caminho para um favicon, se houver
-
-# Plugins (opcional, apenas se necessário)
+remote_theme: pages-themes/midnight@v0.2.0
 plugins:
-  - jekyll-include-cache
+- jekyll-remote-theme
 
 # Outras configurações personalizáveis (opcional)
 markdown: kramdown
