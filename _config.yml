@@ -7,7 +7,7 @@ baseurl: ""  # Geralmente vazio para repositórios GitHub Pages, caso contrário
 url: "https://mathborges88.github.io"  # URL do seu site
 
 # Tema
-theme: jekyll-theme-architect 
+theme: minima 
 
 
 # Outras configurações personalizáveis (opcional)
