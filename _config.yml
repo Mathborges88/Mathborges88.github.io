@@ -1,28 +1,2 @@
-# _config.yml
-
-title: "Matheus Borges"  # Título do seu portfólio
-email: "matheusandradeborges@gmail.com"  # (opcional)
-description: "Portfólio de Matheus Borges - Cientista de Dados"
-baseurl: ""  # Geralmente vazio para repositórios GitHub Pages
-url: "https://mathborges88.github.io"  # URL do seu site
-
-# Tema remoto do GitHub Pages
+title: Matheus Borges
 theme: minima
-
-# Outras configurações personalizáveis
-markdown: kramdown
-highlighter: rouge
-
-menu:
-  - title: "Início"
-    url: "/"
-  - title: "Sobre"
-    url: "/sobre"
-  - title: "Resumo"
-    url: "/resumo"
-  - title: "Portfolio"
-    url: "/portfolio"
-  - title: "Serviços"
-    url: "/servicos"
-  - title: "Contato"
-    url: "/contato"
