@@ -1,3 +1,21 @@
-title: Matheus Borges
+title: "Matheus Borges"
+theme: "minimal-mistakes-jekyll"
+plugins:
+  - jekyll-include-cache
 
-theme: minimal-mistakes-jekyll
+# Configurações para o tema Minimal Mistakes
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+
+# Configurações adicionais
+header:
+  image: "caminho/para/imagem-de-fundo.jpg" # opcional, para colocar uma imagem no cabeçalho
+  title: "Bem-vindo ao meu portfólio"
+
+footer:
+  content: "© 2024 Matheus Borges - Todos os direitos reservados"
+
