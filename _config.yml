@@ -12,3 +12,17 @@ theme: minima
 # Outras configurações personalizáveis
 markdown: kramdown
 highlighter: rouge
+
+menu:
+  - title: "Início"
+    url: "/"
+  - title: "Sobre"
+    url: "/sobre"
+  - title: "Resumo"
+    url: "/resumo"
+  - title: "Portfolio"
+    url: "/portfolio"
+  - title: "Serviços"
+    url: "/servicos"
+  - title: "Contato"
+    url: "/contato"
