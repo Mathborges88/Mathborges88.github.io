@@ -7,7 +7,7 @@ baseurl: ""  # Geralmente vazio para repositórios GitHub Pages
 url: "https://mathborges88.github.io"  # URL do seu site
 
 # Tema remoto do GitHub Pages
-remote_theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
 
 # Outras configurações personalizáveis
 markdown: kramdown
