@@ -1,13 +1,13 @@
 # _config.yml
 
 title: "Matheus Borges"  # Título do seu portfólio
-email: "seuemail@exemplo.com"  # (opcional) Seu e-mail, se desejar adicionar
+email: "matheusandradeborges@exemplo.com"  # (opcional) Seu e-mail, se desejar adicionar
 description: "Portfólio de Matheus Borges - Cientista de Dados"  # Descrição do site
 baseurl: ""  # Geralmente vazio para repositórios GitHub Pages, caso contrário, use "/nome-do-repositorio"
 url: "https://mathborges88.github.io"  # URL do seu site
 
 # Tema
-theme: minima  # Tema oficial do GitHub Pages
+theme: jekyll-theme-cayman # Tema oficial do GitHub Pages
 
 # Exemplo de personalização do tema, se necessário
 # logo: "/assets/images/logo.png"  # Caminho para uma imagem de logo, se houver
