@@ -1,21 +1,23 @@
-title: "Matheus Borges"
-theme: "minimal-mistakes-jekyll"
+# _config.yml
+
+title: "Matheus Borges"  # Título do seu portfólio
+email: "seuemail@exemplo.com"  # (opcional) Seu e-mail, se desejar adicionar
+description: "Portfólio de Matheus Borges - Cientista de Dados"  # Descrição do site
+baseurl: ""  # Geralmente vazio para repositórios GitHub Pages, caso contrário, use "/nome-do-repositorio"
+url: "https://mathborges88.github.io"  # URL do seu site
+
+# Tema
+theme: minima  # Tema oficial do GitHub Pages
+
+# Exemplo de personalização do tema, se necessário
+# logo: "/assets/images/logo.png"  # Caminho para uma imagem de logo, se houver
+# favicon: "/assets/images/favicon.ico"  # Caminho para um favicon, se houver
+
+# Plugins (opcional, apenas se necessário)
 plugins:
   - jekyll-include-cache
 
-# Configurações para o tema Minimal Mistakes
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "single"
-
-# Configurações adicionais
-header:
-  image: "caminho/para/imagem-de-fundo.jpg" # opcional, para colocar uma imagem no cabeçalho
-  title: "Bem-vindo ao meu portfólio"
-
-footer:
-  content: "© 2024 Matheus Borges - Todos os direitos reservados"
+# Outras configurações personalizáveis (opcional)
+markdown: kramdown
+highlighter: rouge
 
