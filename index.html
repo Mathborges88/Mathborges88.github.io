@@ -5,94 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-image: url('imagemfundo.png');
-        background-size: cover;
-        background-position: center;
-    }
-    .container {
-        text-align: center;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 10px;
-    }
-    h1 {
-        color: #333;
-    }
-</style>
-</head>
-<body>
-<style>
-    /* Add styles for the drop-down menu and icon */
-    .menu-icon {
-        display: none;
-        cursor: pointer;
-    }
-    .menu-icon div {
-        width: 35px;
-        height: 5px;
-        background-color: #333;
-        margin: 6px 0;
-    }
-    .dropdown-menu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.8);
-        border-radius: 10px;
-        padding: 10px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    .dropdown-menu a {
-        padding: 10px;
-        text-decoration: none;
-        color: #333;
-    }
-    @media (max-width: 768px) {
-        .menu-icon {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('imagemfundo.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+        /* Add styles for the drop-down menu and icon */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+        .menu-icon div {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
         }
         .dropdown-menu {
-            display: flex;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 10px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
-    }
-</style>
-<div class="menu-icon" onclick="toggleMenu()">
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
-<div class="dropdown-menu" id="dropdownMenu">
-    <a href="#">Home</a>
-    <a href="#">About me</a>
-    <a href="#">Summary</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-</div>
-<script>
-    function toggleMenu() {
-        var menu = document.getElementById('dropdownMenu');
-        if (menu.style.display === 'flex') {
-            menu.style.display = 'none';
-        } else {
-            menu.style.display = 'flex';
+        .dropdown-menu a {
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
         }
-    }
- </script>
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: flex;
+                flex-direction: column;
+            }
+            .dropdown-menu {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="dropdown-menu" id="dropdownMenu">
+        <a href="#">Home</a>
+        <a href="#">About me</a>
+        <a href="#">Summary</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
     <div class="container">
         <h1>Welcome to My Portfolio</h1>
         <p>This is a simple portfolio page.</p>
     </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('dropdownMenu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+    </script>
 </body>
 </html>
