@@ -61,7 +61,7 @@
         }
         .about-text {
             flex: 1;
-            margin-bottom: 40px; /* Increased margin below About Me section */
+            margin-bottom: 20px; /* Adjusted margin below About Me section */
             width: 100%;
         }
         .about-text h2 {
@@ -73,13 +73,11 @@
         }
         .skills-profile-container {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column; /* Stack the boxes vertically */
             width: 100%;
-            margin-top: 20px; /* Moved down */
             gap: 20px; /* Add gap between the boxes */
         }
         .skills-profile-container .box {
-            flex: 1;
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
