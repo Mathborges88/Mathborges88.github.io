@@ -85,6 +85,7 @@
             border-radius: 10px;
             box-sizing: border-box; /* Ensure padding is included in the width */
             flex: 1; /* Make each box flexible */
+            height: 100%; /* Ensure both boxes have the same height */
         }
         .side-by-side-container .box h2 {
             color: #333;
@@ -98,9 +99,9 @@
             padding: 10px;
             background: rgba(240, 240, 240, 0.9);
             border-radius: 5px;
-            overflow-x: scroll;
+            overflow-x: auto;
             white-space: nowrap;
-            position: relative;
+            height: 100%; /* Ensure it takes the full height of the box */
         }
         .slide-container {
             display: flex;
@@ -133,43 +134,7 @@
             border-radius: 50%;
             margin-right: 5px;
         }
-        .nav-buttons {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-        .nav-buttons button {
-            background-color: rgba(0,0,0,0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
     </style>
-    <script>
-        let slideIndex = 0;
-
-        function showSlide(index) {
-            const slides = document.querySelectorAll('.slide');
-            if (index >= slides.length) {
-                slideIndex = 0;
-            } else if (index < 0) {
-                slideIndex = slides.length - 1;
-            } else {
-                slideIndex = index;
-            }
-            const offset = -slideIndex * 100;
-            document.querySelector('.slide-container').style.transform = `translateX(${offset}%)`;
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelector('.prev').addEventListener('click', () => showSlide(slideIndex - 1));
-            document.querySelector('.next').addEventListener('click', () => showSlide(slideIndex + 1));
-        });
-    </script>
 </head>
 <body>
     <div class="header">
