@@ -35,6 +35,10 @@
             margin-top: 80px; /* Adjusted for header space */
             width: 90%;
             max-width: 1200px; /* Increased max width */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensure containers occupy the entire height */
+            height: calc(100vh - 80px); /* Full height minus header */
         }
         .section {
             margin: 20px 0;
@@ -42,6 +46,7 @@
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Make each section flexible */
         }
         .section h2 {
             margin-bottom: 15px;
