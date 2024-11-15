@@ -52,7 +52,8 @@
             width: 150px;
             height: auto;
             border-radius: 10px;
-            margin-left: -170px;
+            position: absolute;
+            left: -170px;
         }
         .about-text {
             flex: 1;
@@ -70,9 +71,10 @@
             justify-content: space-between;
             margin-top: 20px;
             width: 100%;
+            gap: 20px; /* Add gap between the boxes */
         }
         .skills-profile-container .box {
-            width: 48%;
+            flex: 1;
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
