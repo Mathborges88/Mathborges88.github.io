@@ -32,24 +32,31 @@
             color: #333;
             font-weight: bold;
         }
-        .about-container {
+        .about-section {
             margin-top: 80px; /* Adjusted for header space */
+            display: flex;
+            align-items: flex-start;
+            width: 80%;
+            max-width: 800px;
+        }
+        .about-container {
             display: flex;
             align-items: flex-start;
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            width: 80%;
-            max-width: 800px;
+            width: 100%;
+            margin-left: 20px;
         }
         .about-container img {
-            width: 300px; /* Doubled the size */
+            width: 150px;
             height: auto;
             border-radius: 10px;
-            margin-right: 20px;
+            margin-left: -170px;
         }
         .about-text {
             flex: 1;
+            margin-left: 20px;
         }
         .about-text h2 {
             color: #333;
@@ -62,6 +69,7 @@
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
+            width: 100%;
         }
         .skills-profile-container .box {
             width: 48%;
@@ -87,11 +95,13 @@
         <a href="#">Services</a>
         <a href="#">Contact</a>
     </div>
-    <div class="about-container">
+    <div class="about-section">
         <img src="myphoto.jpg" alt="Your Photo">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>This is a brief description about me.</p>
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>This is a brief description about me.</p>
+            </div>
         </div>
     </div>
     <div class="skills-profile-container">
