@@ -30,7 +30,7 @@
             margin: 0 15px;
             text-decoration: none;
             color: #333;
-            font-weight: bold.
+            font-weight: bold;
         }
         .about-section {
             margin-top: 80px; /* Adjusted for header space */
@@ -66,10 +66,30 @@
         }
         .about-text h2 {
             color: #333;
-            margin-bottom: 10px.
+            margin-bottom: 10px;
         }
         .about-text p {
-            color: #666.
+            color: #666;
+        }
+        .side-by-side-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+            gap: 20px; /* Add gap between the boxes */
+        }
+        .side-by-side-container .box {
+            flex: 1;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        .side-by-side-container .box h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .side-by-side-container .box p {
+            color: #666;
         }
     </style>
 </head>
@@ -78,9 +98,9 @@
         <a href="index.html">Home</a>
         <a href="about.html">About me</a>
         <a href="summary.html">Summary</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
     </div>
     <div class="about-section">
         <img src="myphoto.jpg" alt="Your Photo">
@@ -88,6 +108,16 @@
             <div class="about-text">
                 <h2>About Me</h2>
                 <p>This is a brief description about me.</p>
+            </div>
+            <div class="side-by-side-container">
+                <div class="box">
+                    <h2>Box 1</h2>
+                    <p>Content for box 1.</p>
+                </div>
+                <div class="box">
+                    <h2>Box 2</h2>
+                    <p>Content for box 2.</p>
+                </div>
             </div>
         </div>
     </div>
