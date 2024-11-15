@@ -40,7 +40,7 @@
             width: 80%;
             max-width: 1200px; /* Increased width for better layout */
             gap: 40px; /* Space between image and text */
-            height: calc(100vh - 120px); /* Full height minus header and margins */
+            height: auto;
         }
         .about-section img {
             width: 341.25px; /* 65% of 525px */
@@ -56,12 +56,12 @@
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             width: 100%; /* Made wider */
-            flex: 1; /* Make the about container flexible */
+            height: auto; /* Increase height */
         }
         .about-text {
             flex: 1;
-            margin-bottom: 20px; /* Adjusted margin below About Me section */
             width: 100%;
+            margin-bottom: 20px; /* Adjusted margin below About Me section */
         }
         .about-text h2 {
             color: #333;
@@ -74,9 +74,10 @@
             display: flex;
             justify-content: space-between; /* Adjusted to space between */
             width: 100%;
-            margin-top: 10px; /* Decreased margin to reduce gap */
-            gap: 5px; /* Reduced gap between the boxes */
-            height: 100%; /* Full height for side-by-side containers */
+            margin-top: 0; /* Remove top margin */
+            gap: 40px; /* Keep gap between the boxes */
+            height: auto; /* Increase height */
+            margin-bottom: 20px; /* Add bottom margin for spacing */
         }
         .side-by-side-container .box {
             padding: 20px;
@@ -84,6 +85,7 @@
             border-radius: 10px;
             box-sizing: border-box; /* Ensure padding is included in the width */
             flex: 1; /* Make each box flexible */
+            height: 300px; /* Increase height */
         }
         .side-by-side-container .box h2 {
             color: #333;
@@ -110,16 +112,16 @@
                 <h2>About Me</h2>
                 <p>This is a brief description about me.</p>
             </div>
-        </div>
-    </div>
-    <div class="side-by-side-container">
-        <div class="box">
-            <h2>Box 1</h2>
-            <p>Content for box 1.</p>
-        </div>
-        <div class="box">
-            <h2>Box 2</h2>
-            <p>Content for box 2.</p>
+            <div class="side-by-side-container">
+                <div class="box">
+                    <h2>Box 1</h2>
+                    <p>Content for box 1.</p>
+                </div>
+                <div class="box">
+                    <h2>Box 2</h2>
+                    <p>Content for box 2.</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
