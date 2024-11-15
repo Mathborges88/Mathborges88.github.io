@@ -29,6 +29,67 @@
 </style>
 </head>
 <body>
+     <style>
+    /* Add styles for the drop-down menu and icon */
+    .menu-icon {
+        display: none;
+        cursor: pointer;
+    }
+    .menu-icon div {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+    }
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 10px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .dropdown-menu a {
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+    @media (max-width: 768px) {
+        .menu-icon {
+            display: flex;
+            flex-direction: column;
+        }
+        .dropdown-menu {
+            display: flex;
+        }
+    }
+</style>
+<div class="menu-icon" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="dropdown-menu" id="dropdownMenu">
+    <a href="#">Home</a>
+    <a href="#">About me</a>
+    <a href="#">Summary</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('dropdownMenu');
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
+    }
+ </script>
     <div class="container">
         <h1>Welcome to My Portfolio</h1>
         <p>This is a simple portfolio page.</p>
