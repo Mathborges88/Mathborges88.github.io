@@ -126,22 +126,19 @@
         .circle-container {
             margin: 10px 0;
         }
-        .circle-container .circle-filled {
-            display: inline-block;
+        .circle-container .circle-filled,
+        .circle-container .circle-outline {
             width: 10px;
             height: 10px;
-            background-color: #000; /* Filled circle color */
             border-radius: 50%;
             margin-right: 5px;
         }
+        .circle-container .circle-filled {
+            background-color: #000; /* Filled circle color */
+        }
         .circle-container .circle-outline {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            border: 2px solid #000; /* Outline color and thickness */
-            border-radius: 50%;
+            border: 1px solid #000; /* Outline color and thickness */
             background-color: transparent; /* Make the background transparent */
-            margin-right: 5px;
         }
         button.switch-button {
             background: url('switchbutton.png') no-repeat center center;
