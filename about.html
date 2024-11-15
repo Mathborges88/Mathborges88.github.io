@@ -75,10 +75,11 @@
             gap: 20px; /* Add gap between the boxes */
         }
         .side-by-side-container .box {
-            flex: 0.5; /* Set width to half */
+            width: 50%; /* Set width to half */
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
+            box-sizing: border-box; /* Ensure padding is included in the width */
         }
         .side-by-side-container .box h2 {
             color: #333;
