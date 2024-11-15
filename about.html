@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>My Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,9 +11,9 @@
             padding: 0;
             display: flex;
             flex-direction: column;
-            justify-content: start;
+            justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
             background-image: url('imagemfundo.png');
             background-size: cover;
             background-position: center;
@@ -32,101 +32,39 @@
             color: #333;
             font-weight: bold;
         }
-        .about-section {
-            margin-top: 80px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            width: 80%;
-            max-width: 1200px;
-            gap: 40px;
-            height: calc(100vh - 120px);
-        }
-        .about-section img {
-            width: 341.25px;
-            height: 315.25px;
-            border-radius: 10px;
-            margin-left: -50px;
-        }
-        .about-container {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 20px;
+        .container {
+            margin-top: 60px; /* Adjusted for header space */
+            text-align: center;
             background: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            width: 100%;
-            flex: 1;
-        }
-        .about-text {
-            flex: 1;
-            margin-bottom: 20px;
-            width: 100%;
-        }
-        .about-text h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .about-text p {
-            color: #666;
-        }
-        .side-by-side-container {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin-top: 0;
-            gap: 5px;
-            height: calc(100% + 6cm);
-            transform: translateY(-9cm);
-        }
-        .side-by-side-container .box {
             padding: 20px;
-            background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            box-sizing: border-box;
-            flex: 1;
-            height: 100%;
         }
-        .side-by-side-container .box h2 {
+        h1 {
             color: #333;
-            margin-bottom: 10px;
         }
-        .side-by-side-container .box p {
-            color: #666;
-        }
-        .box2-window {
+        .icons {
+            display: flex;
+            justify-content: center;
             margin-top: 20px;
-            padding: 10px;
-            background: rgba(240, 240, 240, 0.9);
-            border-radius: 5px;
-            overflow-x: auto;
-            white-space: nowrap;
-            height: 100%;
         }
-        .slide-container {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
+        .icons a {
+            margin: 0 10px;
+            text-decoration: none;
         }
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
+        .icons img {
+            width: 40px;
+            height: 40px;
         }
-        .column {
-            display: inline-block;
-            vertical-align: top;
-            margin-right: 40px;
+        .icons-container {
+            margin-top: 20px;
         }
         .title-container {
-            margin-bottom: 20px;
-        }
-        .title-container h3 {
-            margin: 10px 0;
-            color: #444;
+            margin: 20px 0;
         }
         .circle-container {
             margin: 10px 0;
         }
-        .circle-container .circle {
+        .circle {
             display: inline-block;
             width: 10px;
             height: 10px;
@@ -134,414 +72,87 @@
             border-radius: 50%;
             margin-right: 5px;
         }
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <a href="index.html">Home</a>
+        <a href="#">Home</a>
         <a href="about.html">About me</a>
         <a href="summary.html">Summary</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </div>
-    <div class="about-section">
-        <img src="myphoto.jpg" alt="Your Photo">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>This is a brief description about me.</p>
-            </div>
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is a simple portfolio page.</p>
+    </div>
+    <div class="icons-container">
+        <div class="icons">
+            <a href="mailto:matheusandradeborges@gmail.com" title="Send me an email"><img src="iconemail.png" alt="Email"></a>
+            <a href="https://github.com/Mathborges88" title="Visit my GitHub profile"><img src="github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/matheus-borges-datascientist/" title="Visit my LinkedIn profile"><img src="iconlink.png" alt="LinkedIn"></a>
         </div>
     </div>
-    <div class="side-by-side-container">
-        <div class="box">
-            <h2>Box 1</h2>
-            <p>Content for box 1.</p>
-        </div>
-        <div class="box">
-            <h2>Box 2</h2>
-            <p>Content for box 2.</p>
-            <div class="box2-window">
-                <div class="slide-container">
-                    <div class="slide">
-                        <div class="column">
-                            <div class="title-container">
-                                <h3>Title 1</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 2</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 3</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 4</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="title-container">
-                                <h3>Title 5</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 6</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 7</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 8</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="title-container">
-                                <h3>Title 9</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 10</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 11</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 12</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="title-container">
-                                <h3>Title 13</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 14</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 15</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 16</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="column">
-                            <div class="title-container">
-                                <h3>Title 17</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 18</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 19</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 20</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="title-container">
-                                <h3>Title 21</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 22</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 23</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 24</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="title-container">
-                                <h3>Title 25</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 26</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 27</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 28</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="title-container">
-                                <h3>Title 29</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 30</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 31</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 32</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                </div>
+    <div class="container">
+        <!-- Titles 1 to 16 -->
+        <div class="title-container">
+            <h3>Title 1</h3>
+            <div class="circle-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
             </div>
         </div>
+        <div class="title-container">
+            <h3>Title 2</h3>
+            <div class="circle-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+        <!-- Add more titles up to 16 in the same format -->
+
+        <!-- Button to show titles 17 to 32 -->
+        <button onclick="displayTitles()">Show Titles 17-32</button>
+
+        <!-- Titles 17 to 32 (Initially hidden) -->
+        <div id="more-titles" class="hidden">
+            <div class="title-container">
+                <h3>Title 17</h3>
+                <div class="circle-container">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="title-container">
+                <h3>Title 18</h3>
+                <div class="circle-container">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <!-- Add more titles up to 32 in the same format -->
+        </div>
     </div>
+    <script>
+        function displayTitles() {
+            document.getElementById('more-titles').classList.remove('hidden');
+        }
+    </script>
 </body>
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("slide");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-    }
-</script>
 </html>
