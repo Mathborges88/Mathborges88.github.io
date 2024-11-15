@@ -39,6 +39,7 @@
             align-items: flex-start;
             width: 80%;
             max-width: 1200px; /* Increased width for better layout */
+            position: relative;
         }
         .about-container {
             display: flex;
@@ -74,8 +75,9 @@
         .side-by-side-container {
             display: flex;
             justify-content: space-between;
-            width: 100%;
-            margin-top: 40px; /* Adjusted margin to separate from About Me box */
+            width: calc(100% - 580px); /* Adjust width to fit within the right side */
+            margin-left: 580px; /* Move the container to the right */
+            margin-top: 20px; /* Adjusted margin to separate from About Me box */
             gap: 20px; /* Add gap between the boxes */
         }
         .side-by-side-container .box {
