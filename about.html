@@ -35,6 +35,7 @@
         .about-section {
             margin-top: 80px; /* Adjusted for header space */
             display: flex;
+            justify-content: center;
             align-items: center;
             width: 80%;
             max-width: 800px;
@@ -45,13 +46,18 @@
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            width: 100%;
+            width: 70%; /* Adjust width to move text boxes more to the right */
+            margin-left: 150px; /* Add margin to move the container to the right */
         }
         .about-container img {
-            width: 100px;
+            width: 150px; /* Adjusted size */
             height: auto;
             border-radius: 10px;
             margin-right: 20px;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
         }
         .about-text {
             flex: 1;
@@ -89,14 +95,14 @@
     <div class="header">
         <a href="index.html">Home</a>
         <a href="about.html">About me</a>
-        <a href="#">Summary</a>
+        <a href="summary.html">Summary</a>
         <a href="#">Portfolio</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
     </div>
     <div class="about-section">
+        <img src="myphoto.jpg" alt="Your Photo">
         <div class="about-container">
-            <img src="myphoto.jpg" alt="Your Photo">
             <div class="about-text">
                 <h2>About Me</h2>
                 <p>This is a brief description about me.</p>
