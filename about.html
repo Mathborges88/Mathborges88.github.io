@@ -70,17 +70,24 @@
         }
         .side-by-side-container {
             display: flex;
-            justify-content: flex-end; /* Align items to the end */
+            justify-content: space-between; /* Adjusted to space between */
             width: 100%;
             margin-top: 20px; /* Adjusted margin to separate from About Me box */
-            gap: 10px; /* Reduced gap to move boxes closer */
+            gap: 10px; /* Gap between the boxes */
         }
         .side-by-side-container .box {
-            width: 420px; /* Set width to 420px */
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             box-sizing: border-box; /* Ensure padding is included in the width */
+        }
+        .side-by-side-container .box.box1 {
+            width: calc(50% - 5px); /* Adjusted width to align with image */
+            margin-left: -50px; /* Aligns with the image */
+        }
+        .side-by-side-container .box.box2 {
+            width: calc(50% - 5px); /* Adjusted width to align with About container */
+            margin-right: 0; /* Ensures the box aligns with the container */
         }
         .side-by-side-container .box h2 {
             color: #333;
@@ -110,11 +117,11 @@
         </div>
     </div>
     <div class="side-by-side-container">
-        <div class="box">
+        <div class="box box1">
             <h2>Box 1</h2>
             <p>Content for box 1.</p>
         </div>
-        <div class="box">
+        <div class="box box2">
             <h2>Box 2</h2>
             <p>Content for box 2.</p>
         </div>
