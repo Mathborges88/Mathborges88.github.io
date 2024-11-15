@@ -35,7 +35,7 @@
         .about-container {
             margin-top: 80px; /* Adjusted for header space */
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
@@ -43,7 +43,7 @@
             max-width: 800px;
         }
         .about-container img {
-            width: 150px;
+            width: 300px; /* Doubled the size */
             height: auto;
             border-radius: 10px;
             margin-right: 20px;
@@ -56,6 +56,24 @@
             margin-bottom: 10px;
         }
         .about-text p {
+            color: #666;
+        }
+        .skills-profile-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .skills-profile-container .box {
+            width: 48%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        .skills-profile-container .box h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .skills-profile-container .box p {
             color: #666;
         }
     </style>
@@ -74,6 +92,16 @@
         <div class="about-text">
             <h2>About Me</h2>
             <p>This is a brief description about me.</p>
+        </div>
+    </div>
+    <div class="skills-profile-container">
+        <div class="box">
+            <h2>Skills</h2>
+            <p>List your skills here.</p>
+        </div>
+        <div class="box">
+            <h2>Profile</h2>
+            <p>Write your profile here.</p>
         </div>
     </div>
 </body>
