@@ -33,20 +33,20 @@
             font-weight: bold;
         }
         .about-section {
-            margin-top: 80px; /* Adjusted for header space */
+            margin-top: 80px;
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
             width: 80%;
-            max-width: 1200px; /* Increased width for better layout */
-            gap: 40px; /* Space between image and text */
-            height: calc(100vh - 120px); /* Full height minus header and margins */
+            max-width: 1200px;
+            gap: 40px;
+            height: calc(100vh - 120px);
         }
         .about-section img {
-            width: 341.25px; /* 65% of 525px */
-            height: 315.25px; /* 65% of 485px */
+            width: 341.25px;
+            height: 315.25px;
             border-radius: 10px;
-            margin-left: -50px; /* Move image to the very left, about 1cm from the margin */
+            margin-left: -50px;
         }
         .about-container {
             display: flex;
@@ -55,12 +55,12 @@
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            width: 100%; /* Made wider */
-            flex: 1; /* Make the about container flexible */
+            width: 100%;
+            flex: 1;
         }
         .about-text {
             flex: 1;
-            margin-bottom: 20px; /* Adjusted margin below About Me section */
+            margin-bottom: 20px;
             width: 100%;
         }
         .about-text h2 {
@@ -72,20 +72,20 @@
         }
         .side-by-side-container {
             display: flex;
-            justify-content: space-between; /* Adjusted to space between */
+            justify-content: space-between;
             width: 100%;
-            margin-top: 0; /* Removed top margin */
-            gap: 5px; /* Reduced gap between the boxes */
-            height: calc(100% + 6cm); /* Increased height by 6cm */
-            transform: translateY(-9cm); /* Moved containers upwards by 9cm */
+            margin-top: 0;
+            gap: 5px;
+            height: calc(100% + 6cm);
+            transform: translateY(-9cm);
         }
         .side-by-side-container .box {
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            box-sizing: border-box; /* Ensure padding is included in the width */
-            flex: 1; /* Make each box flexible */
-            height: 100%; /* Ensure both boxes have the same height */
+            box-sizing: border-box;
+            flex: 1;
+            height: 100%;
         }
         .side-by-side-container .box h2 {
             color: #333;
@@ -101,7 +101,7 @@
             border-radius: 5px;
             overflow-x: auto;
             white-space: nowrap;
-            height: 100%; /* Ensure it takes the full height of the box */
+            height: 100%;
         }
         .slide-container {
             display: flex;
@@ -114,7 +114,7 @@
         .column {
             display: inline-block;
             vertical-align: top;
-            margin-right: 40px; /* Space between columns */
+            margin-right: 40px;
         }
         .title-container {
             margin-bottom: 20px;
@@ -504,6 +504,13 @@
                             </div>
                         </div>
                     </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
                 </div>
             </div>
         </div>
