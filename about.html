@@ -98,7 +98,8 @@
             padding: 10px;
             background: rgba(240, 240, 240, 0.9);
             border-radius: 5px;
-            overflow: hidden;
+            overflow-x: scroll;
+            white-space: nowrap;
             position: relative;
         }
         .slide-container {
@@ -148,6 +149,27 @@
             cursor: pointer;
         }
     </style>
+    <script>
+        let slideIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            if (index >= slides.length) {
+                slideIndex = 0;
+            } else if (index < 0) {
+                slideIndex = slides.length - 1;
+            } else {
+                slideIndex = index;
+            }
+            const offset = -slideIndex * 100;
+            document.querySelector('.slide-container').style.transform = `translateX(${offset}%)`;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.prev').addEventListener('click', () => showSlide(slideIndex - 1));
+            document.querySelector('.next').addEventListener('click', () => showSlide(slideIndex + 1));
+        });
+    </script>
 </head>
 <body>
     <div class="header">
@@ -495,25 +517,4 @@
                                     <div class="circle"></div>
                                 </div>
                             </div>
-                            <div class="title-container">
-                                <h3>Title 31</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                            <div class="title-container">
-                                <h3>Title 32</h3>
-                                <div class="circle-container">
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                    <div class="circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            <div class
