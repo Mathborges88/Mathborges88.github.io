@@ -36,23 +36,24 @@
             margin-top: 80px; /* Adjusted for header space */
             display: flex;
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-start;
             width: 80%;
-            max-width: 800px;
+            max-width: 1200px; /* Increased width for better layout */
         }
         .about-container {
             display: flex;
+            flex-direction: column;
             align-items: flex-start;
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            margin-left: auto; /* Move the container to the right */
+            margin-left: 580px; /* Move the container to the right */
+            width: 60%; /* Adjust width */
         }
         .about-section img {
             width: 525px; /* Maintained size */
             height: 485px; /* Maintained size */
             border-radius: 10px;
-            margin-right: 20px;
             position: absolute;
             left: 20px;
             top: 50%;
@@ -60,6 +61,7 @@
         }
         .about-text {
             flex: 1;
+            margin-bottom: 20px; /* Add margin below About Me section */
         }
         .about-text h2 {
             color: #333;
@@ -71,7 +73,6 @@
         .skills-profile-container {
             display: flex;
             justify-content: space-between;
-            margin-top: 20px;
             width: 100%;
             gap: 20px; /* Add gap between the boxes */
         }
@@ -106,16 +107,16 @@
                 <h2>About Me</h2>
                 <p>This is a brief description about me.</p>
             </div>
-        </div>
-    </div>
-    <div class="skills-profile-container">
-        <div class="box">
-            <h2>Skills</h2>
-            <p>List your skills here.</p>
-        </div>
-        <div class="box">
-            <h2>Profile</h2>
-            <p>Write your profile here.</p>
+            <div class="skills-profile-container">
+                <div class="box">
+                    <h2>Skills</h2>
+                    <p>List your skills here.</p>
+                </div>
+                <div class="box">
+                    <h2>Profile</h2>
+                    <p>Write your profile here.</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
