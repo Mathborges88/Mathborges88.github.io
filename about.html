@@ -39,7 +39,6 @@
             align-items: flex-start;
             width: 80%;
             max-width: 1200px; /* Increased width for better layout */
-            position: relative;
         }
         .about-container {
             display: flex;
@@ -48,17 +47,13 @@
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            margin-left: 580px; /* Move the container to the right */
             width: 70%; /* Made wider */
         }
         .about-section img {
             width: 525px; /* Maintained size */
             height: 485px; /* Maintained size */
             border-radius: 10px;
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
+            margin-right: 20px; /* Space between image and text */
         }
         .about-text {
             flex: 1;
@@ -75,8 +70,7 @@
         .side-by-side-container {
             display: flex;
             justify-content: space-between;
-            width: calc(100% - 580px); /* Adjust width to fit within the right side */
-            margin-left: 580px; /* Move the container to the right */
+            width: 100%;
             margin-top: 20px; /* Adjusted margin to separate from About Me box */
             gap: 20px; /* Add gap between the boxes */
         }
