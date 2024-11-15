@@ -45,11 +45,19 @@
             color: #333;
             margin: 10px 0;
         }
+        .projects-container {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 1000px;
+        }
         .scroll-container {
             display: flex;
             overflow-x: auto;
             gap: 20px;
-            margin-top: 20px;
+            height: 200px; /* Increased height */
         }
         .scroll-container div {
             min-width: 300px;
@@ -72,6 +80,8 @@
     <div class="container">
         <h1>Portfolio</h1>
         <h2>Check some of my projects</h2>
+    </div>
+    <div class="projects-container">
         <div class="scroll-container">
             <div>Project 1</div>
             <div>Project 2</div>
