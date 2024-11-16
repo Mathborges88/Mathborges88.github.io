@@ -105,16 +105,19 @@
         }
         .slide-container {
             display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
             transition: transform 0.5s ease-in-out;
         }
         .slide {
-            min-width: 100%;
-            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
         }
         .column {
-            display: inline-block;
-            vertical-align: top;
-            margin-right: 40px;
+            width: calc(25% - 20px);
+            box-sizing: border-box;
         }
         .title-container {
             margin-bottom: 20px;
@@ -229,6 +232,8 @@
                                     <div class="circle-filled"></div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="column">
                             <div class="title-container">
                                 <h3>Title 5</h3>
                                 <div class="circle-container">
@@ -277,8 +282,8 @@
                                     <div class="circle-filled"></div>
                                     <div class="circle-filled"></div>
                                     <div class="circle-filled"></div>
-                                    <div class="circle-outline"></div>
-                                    <div class="circle-outline"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
                                 </div>
                             </div>
                             <div class="title-container">
@@ -311,6 +316,8 @@
                                     <div class="circle-filled"></div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="column">
                             <div class="title-container">
                                 <h3>Title 13</h3>
                                 <div class="circle-container">
@@ -397,6 +404,8 @@
                                     <div class="circle-filled"></div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="column">
                             <div class="title-container">
                                 <h3>Title 21</h3>
                                 <div class="circle-container">
@@ -479,6 +488,8 @@
                                     <div class="circle-filled"></div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="column">
                             <div class="title-container">
                                 <h3>Title 29</h3>
                                 <div class="circle-container">
