@@ -105,19 +105,18 @@
         }
         .slide-container {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
             transition: transform 0.5s ease-in-out;
         }
         .slide {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            width: 100%;
+            min-width: 100%;
+            box-sizing: border-box;
         }
         .column {
-            width: calc(25% - 20px);
+            display: inline-block;
+            vertical-align: top;
+            width: 25%;
             box-sizing: border-box;
+            padding-right: 10px;
         }
         .title-container {
             margin-bottom: 20px;
@@ -130,19 +129,32 @@
             display: flex;
             margin: 10px 0;
         }
-        .circle-container .circle-filled,
+        .circle-container .circle-half-filled,
         .circle-container .circle-outline {
             width: 10px;
             height: 10px;
             border-radius: 50%;
             margin-right: 5px;
         }
-        .circle-container .circle-filled {
-            background-color: #000; /* Filled circle color */
+        .circle-container .circle-half-filled {
+            position: relative;
+            background-color: transparent;
+            border: 1px solid #000;
+        }
+        .circle-container .circle-half-filled::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 50%;
+            height: 100%;
+            background-color: #000;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
         }
         .circle-container .circle-outline {
-            border: 1px solid #000; /* Outline color and thickness */
-            background-color: transparent; /* Make the background transparent */
+            border: 1px solid #000;
+            background-color: transparent;
         }
         button.switch-button {
             background: url('switchbutton.png') no-repeat center center;
@@ -154,7 +166,6 @@
             outline: none;
             transition: transform 0.1s;
         }
-
         button.switch-button:active {
             transform: scale(0.95);
         }
@@ -195,9 +206,9 @@
                             <div class="title-container">
                                 <h3>Title 1</h3>
                                 <div class="circle-container">
-                                    <div class="circle-filled"></div>
-                                    <div class="circle-filled"></div>
-                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-half-filled"></div>
                                     <div class="circle-outline"></div>
                                     <div class="circle-outline"></div>
                                 </div>
@@ -205,11 +216,11 @@
                             <div class="title-container">
                                 <h3>Title 2</h3>
                                 <div class="circle-container">
-                                    <div class="circle-filled"></div>
-                                    <div class="circle-filled"></div>
-                                    <div class="circle-filled"></div>
-                                    <div class="circle-outline"></div>
-                                    <div class="circle-outline"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-half-filled"></div>
                                 </div>
                             </div>
                             <div class="title-container">
