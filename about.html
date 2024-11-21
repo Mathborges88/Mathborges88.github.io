@@ -35,7 +35,6 @@
         .about-section {
             margin-top: 80px;
             display: flex;
-            flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
             width: 80%;
@@ -69,7 +68,7 @@
             margin-bottom: 10px;
         }
         .about-text p {
-            line-height: 1.8;
+            line-height: 1.8; /* Increased line height */
             color: #666;
         }
         .side-by-side-container {
@@ -78,7 +77,8 @@
             width: 100%;
             margin-top: 0;
             gap: 5px;
-            height: auto;
+            height: calc(100% + 6cm);
+            transform: translateY(-3cm);
         }
         .side-by-side-container .box {
             padding: 20px;
@@ -93,7 +93,7 @@
             margin-bottom: 10px;
         }
         .side-by-side-container .box p {
-            line-height: 1.8;
+            line-height: 1.8; /* Increased line height */
             color: #666;
         }
         .box2-window {
@@ -204,291 +204,286 @@
                 <h2>About Me</h2>
                 <p>
 I am a natural questioner, driven by the pursuit of simple solutions to the world’s complex problems.
-I believe in the transformative power of asking the right questions, as they unveil paths previously unseen. With 6 years of experience in consulting, I worked at renowned companies and led diverse pr[...]
+I believe in the transformative power of asking the right questions, as they unveil paths previously unseen. With 6 years of experience in consulting, I worked at renowned companies and led diverse projects, gaining a broad and strategic view of business. It was in this environment that I discovered the limitless potential of data and decided to transition into a more technical field, combining analytical depth with my managerial background.<br><br>
 
-Today, I dedicate myself to exploring the future hidden in Big Data, uncovering insights capable of transforming realities. I have a strong foundation in statistics, data visualization, and building l[...]
+Today, I dedicate myself to exploring the future hidden in Big Data, uncovering insights capable of transforming realities. I have a strong foundation in statistics, data visualization, and building large-scale predictive models, always aligned with business goals. My storytelling skills, honed through years in consulting, ensure that every analysis tells a clear and impactful story.<br><br>
 
-I am passionate about technology and continuous learning. While today I apply advanced analytics and machine learning techniques, I see myself diving even deeper into deep learning and artificial inte[...]
-            </div>
-            <div class="side-by-side-container">
-                <div class="box">
-                    <h2>Profile</h2>
-                    <p>Due to my background in business and multidisciplinary projects, I see myself as a <strong>V-Shaped</strong> professional. I believe that strategic connections with other areas are the [...]
-                </div>
-                <div class="box">
-                    <h2>Languages</h2>
-                    <p>Content for Languages box.</p>
-                </div>
+I am passionate about technology and continuous learning. While today I apply advanced analytics and machine learning techniques, I see myself diving even deeper into deep learning and artificial intelligence tomorrow. After all, being immersed in technology is a constant invitation to broaden horizons and discover what lies beyond.</p>
             </div>
         </div>
-        <div class="side-by-side-container">
-            <div class="box">
-                <h2>Box 2</h2>
-                <p>Content for box 2.</p>
-                <button class="switch-button" id="toggleButton" onclick="toggleTitles()" title="Click here to switch from Technical/Comportamental skills"></button>
-                <span style="margin-left: 10px;">Click here to switch from Technical/Comportamental skills</span>
-                <div class="box2-window" id="titles-window">
-                    <div id="titles1-16" class="slide-container">
-                        <div class="slide">
-                            <div class="column">
-                                <div class="title-container">
-                                    <h3>Title 1</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 2</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 3</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 4</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
+    </div>
+    <div class="side-by-side-container">
+        <div class="box">
+            <h2>Profile</h2>
+            <p>Due to my background in business and multidisciplinary projects, I see myself as a <strong>V-Shaped</strong> professional. I believe that strategic connections with other areas are the amplifier of a data scientist's results.</p>
+        </div>
+        <div class="box">
+            <h2>Box 2</h2>
+            <p>Content for box 2.</p>
+            <button class="switch-button" id="toggleButton" onclick="toggleTitles()" title="Click here to switch from Technical/Comportamental skills"></button>
+            <span style="margin-left: 10px;">Click here to switch from Technical/Comportamental skills</span>
+            <div class="box2-window" id="titles-window">
+                <div id="titles1-16" class="slide-container">
+                    <div class="slide">
+                        <div class="column">
+                            <div class="title-container">
+                                <h3>Title 1</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="title-container">
-                                    <h3>Title 5</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 6</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 7</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 8</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
+                            <div class="title-container">
+                                <h3>Title 2</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="title-container">
-                                    <h3>Title 9</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 10</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 11</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 12</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
+                            <div class="title-container">
+                                <h3>Title 3</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="title-container">
-                                    <h3>Title 13</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
+                            <div class="title-container">
+                                <h3>Title 4</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
                                 </div>
-                                <div class="title-container">
-                                    <h3>Title 14</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="title-container">
+                                <h3>Title 5</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
                                 </div>
-                                <div class="title-container">
-                                    <h3>Title 15</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 6</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
                                 </div>
-                                <div class="title-container">
-                                    <h3>Title 16</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 7</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 8</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="title-container">
+                                <h3>Title 9</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 10</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 11</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 12</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="title-container">
+                                <h3>Title 13</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 14</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 15</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 16</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="titles17-32" class="slide-container" style="display:none;">
-                        <div class="slide">
-                            <div class="column">
-                                <div class="title-container">
-                                    <h3>Title 17</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 18</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 19</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 20</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
+                </div>
+                <div id="titles17-32" class="slide-container" style="display:none;">
+                    <div class="slide">
+                        <div class="column">
+                            <div class="title-container">
+                                <h3>Title 17</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="title-container">
-                                    <h3>Title 21</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 22</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 23</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
-                                </div>
-                                <div class="title-container">
-                                    <h3>Title 24</h3>
-                                    <div class="circle-container">
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-filled"></div>
-                                        <div class="circle-half-filled"></div>
-                                        <div class="circle-outline"></div>
-                                        <div class="circle-outline"></div>
-                                    </div>
+                            <div class="title-container">
+                                <h3>Title 18</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
                                 </div>
                             </div>
-                            <div class="column">
-                                <div class="title-container">
-                                    <h3>Title 25</h3>
+                            <div class="title-container">
+                                <h3>Title 19</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 20</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="title-container">
+                                <h3>Title 21</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 22</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 23</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                            <div class="title-container">
+                                <h3>Title 24</h3>
+                                <div class="circle-container">
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-filled"></div>
+                                    <div class="circle-half-filled"></div>
+                                    <div class="circle-outline"></div>
+                                    <div class="circle-outline"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="title-container">
+                                <h3>Title 25</h3>
                                 <div class="circle-container">
                                     <div class="circle-filled"></div>
                                     <div class="circle-filled"></div>
