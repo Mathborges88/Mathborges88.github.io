@@ -67,17 +67,21 @@
             background: #e0e0e0;
             border-radius: 10px;
             flex-shrink: 0;
-            font-size: 1.5em; /* Increased font size */
+            font-size: 1.2em; /* Adjusted font size */
             font-weight: bold;
             text-align: center; /* Center align text and images */
         }
         .scroll-container img {
-            width: 4cm; /* Set width to 3cm */
-            height: 4cm; /* Set height to 3cm */
+            width: 3cm; /* Set width to 3cm */
+            height: 3cm; /* Set height to 3cm */
             margin-top: 10px;
         }
-        .scroll-container p {
-            font-size: 1em;
+        .scroll-container p.title {
+            font-size: 1.5em; /* Font size for titles */
+            font-weight: bold; /* Bold titles */
+        }
+        .scroll-container p.description {
+            font-size: 1em; /* Font size for descriptions */
             font-weight: normal;
             margin-top: 5px;
         }
@@ -99,39 +103,39 @@
     <div class="projects-container">
         <div class="scroll-container">
             <div>
-                <p>Data Collection and Organization</p>
+                <p class="title">Data Collection and Organization</p>
                 <img src="path/to/image1.jpg" alt="Data Collection and Organization">
-                <p>Description for Data Collection and Organization</p>
+                <p class="description">Description for Data Collection and Organization</p>
             </div>
             <div>
-                <p>Data Cleaning and Preparation</p>
+                <p class="title">Data Cleaning and Preparation</p>
                 <img src="path/to/image2.jpg" alt="Data Cleaning and Preparation">
-                <p>Description for Data Cleaning and Preparation</p>
+                <p class="description">Description for Data Cleaning and Preparation</p>
             </div>
             <div>
-                <p>Exploratory Data Analysis (EDA)</p>
+                <p class="title">Exploratory Data Analysis (EDA)</p>
                 <img src="path/to/image3.jpg" alt="Exploratory Data Analysis (EDA)">
-                <p>Description for Exploratory Data Analysis (EDA)</p>
+                <p class="description">Description for Exploratory Data Analysis (EDA)</p>
             </div>
             <div>
-                <p>Machine Learning Modeling</p>
+                <p class="title">Machine Learning Modeling</p>
                 <img src="path/to/image4.jpg" alt="Machine Learning Modeling">
-                <p>Description for Machine Learning Modeling</p>
+                <p class="description">Description for Machine Learning Modeling</p>
             </div>
             <div>
-                <p>Data Visualization Reports</p>
+                <p class="title">Data Visualization Reports</p>
                 <img src="path/to/image5.jpg" alt="Data Visualization Reports">
-                <p>Description for Data Visualization Reports</p>
+                <p class="description">Description for Data Visualization Reports</p>
             </div>
             <div>
-                <p>Collaboration with Teams</p>
+                <p class="title">Collaboration with Teams</p>
                 <img src="path/to/image6.jpg" alt="Collaboration with Teams">
-                <p>Description for Collaboration with Teams</p>
+                <p class="description">Description for Collaboration with Teams</p>
             </div>
             <div>
-                <p>Plus</p>
+                <p class="title">Plus</p>
                 <img src="path/to/image7.jpg" alt="Plus">
-                <p>Description for Plus</p>
+                <p class="description">Description for Plus</p>
             </div>
         </div>
     </div>
