@@ -138,6 +138,41 @@
             from {opacity: .4} 
             to {opacity: 1}
         }
+        .contact-form {
+            margin-top: 40px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .contact-form input, .contact-form select, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #555;
+        }
     </style>
 </head>
 <body>
@@ -239,6 +274,27 @@
         <span class="dot" onclick="currentSlide(4)"></span> 
     </div>
 
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="project">Select Project:</label>
+            <select id="project" name="project">
+                <option value="Project 1">Project 1</option>
+                <option value="Project 2">Project 2</option>
+                <option value="Project 3">Project 3</option>
+                <!-- Add more project options as needed -->
+            </select>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="sendEmail()">Send Message</button>
+        </form>
+    </div>
+
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
@@ -265,6 +321,17 @@
             }
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " active";
+        }
+
+        function sendEmail() {
+            const project = document.getElementById('project').value;
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            const email = "matheusandradeborges@gmail.com";
+            const subject = `${project} - ${name}`;
+            const body = `Name: ${name}\n\nMessage:\n${message}`;
+
+            window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         }
     </script>
 </body>
