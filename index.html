@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,9 +11,10 @@
             padding: 0;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            background-image: url('imagemfundo.png');
+            height: 100vh;
+            background-image: url('background1.png');
             background-size: cover;
             background-position: center;
         }
@@ -31,35 +32,65 @@
             color: #333;
             font-weight: bold;
         }
-        .content {
-            margin-top: 80px; /* Adjusted for header space */
-            width: 90%;
-            max-width: 1200px; /* Increased max width */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; /* Ensure containers occupy the entire height */
-            height: calc(100vh - 80px); /* Full height minus header */
+        .container {
+            margin-top: 60px; /* Adjusted for header space */
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
         }
-        .counter {
+        .container h1 {
+            font-size: 3em; /* Increased size */
+            color: #333;
+        }
+        .welcome-message {
+            color: red;
+            font-size: 1.5em; /* Increased size */
+            font-weight: bold; /* Bold text */
+            margin-bottom: 10px;
+        }
+        .portfolio-text {
+            font-size: 1.5em; /* Increased size */
+            color: #333;
+        }
+        .icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .icons a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .icons img {
+            width: 40px;
+            height: 40px;
+        }
+        .icons-container {
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <a href="index.html">Home</a>
+        <a href="#">Home</a>
         <a href="about.html">About me</a>
         <a href="summary.html">Summary</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </div>
-    <div class="content">
-        <h1>Welcome to My Portfolio</h1>
-        <!-- Add your content here -->
-        <div class="counter">
-            <!-- Visitor counter HTML snippet from the service -->
-            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/123456"></script>
+    <div class="container">
+        <div class="welcome-message">Hi! Welcome to my Portfolio</div>
+        <h1>I'm<br>Matheus Borges</h1>
+        <p class="portfolio-text">Data Scientist.</p>
+    </div>
+    <div class="icons-container">
+        <div class="icons">
+            <a href="mailto:matheusandradeborges@gmail.com" title="Send me an email"><img src="iconemail.png" alt="Email"></a>
+            <a href="https://github.com/Mathborges88" title="Visit my GitHub profile"><img src="github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/matheus-borges-datascientist/" title="Visit my LinkedIn profile"><img src="iconlink.png" alt="LinkedIn"></a>
+            <a href="Mathborges.github.io/Profile.pdf" download title="Download my resume"><img src="curriculo.png" alt="Resume"></a>
         </div>
     </div>
 </body>
