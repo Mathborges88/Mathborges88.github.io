@@ -63,7 +63,13 @@
             background: #e0e0e0;
             border-radius: 10px;
             flex-shrink: 0;
-            height: 150px; /* Increased height */
+            height: auto; /* Adjusted height */
+        }
+        .experience-box p {
+            margin: 5px 0;
+        }
+        .experience-box p.bold {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -80,10 +86,30 @@
         <div class="section">
             <h2>Working Experiences</h2>
             <div class="scroll-container">
-                <div>Experience 1</div>
-                <div>Experience 2</div>
-                <div>Experience 3</div>
-                <div>Experience 4</div>
+                <div class="experience-box">
+                    <p class="bold">Company 1</p>
+                    <p>Role 1</p>
+                    <p>Period 1</p>
+                    <p>Accomplishment 1</p>
+                </div>
+                <div class="experience-box">
+                    <p class="bold">Company 2</p>
+                    <p>Role 2</p>
+                    <p>Period 2</p>
+                    <p>Accomplishment 2</p>
+                </div>
+                <div class="experience-box">
+                    <p class="bold">Company 3</p>
+                    <p>Role 3</p>
+                    <p>Period 3</p>
+                    <p>Accomplishment 3</p>
+                </div>
+                <div class="experience-box">
+                    <p class="bold">Company 4</p>
+                    <p>Role 4</p>
+                    <p>Period 4</p>
+                    <p>Accomplishment 4</p>
+                </div>
             </div>
         </div>
         <div class="section">
